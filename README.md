@@ -3,7 +3,7 @@
 Better documentation soon ;)
 
 ```js
-const Enum = require('vanilla-enum')
+import Enum from 'vanilla-enum'
 
 const GENDER = new Enum({
   Male: {
