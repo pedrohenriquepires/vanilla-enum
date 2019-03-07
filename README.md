@@ -16,8 +16,8 @@ const GENDER = new Enum({
   }
 })
 
-console.log(SEXO.Male)                // 1
-console.log(SEXO.getDescription(2))   // Female
-console.log(SEXO.Male.toString())     // Male
-console.log(SEXO.Female.is('Female')) // true
+console.log(GENDER.Male)                // 1
+console.log(GENDER.getDescription(2))   // Female
+console.log(GENDER.Male.toString())     // Male
+console.log(GENDER.Female.is('Female')) // true
 ```
