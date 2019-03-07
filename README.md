@@ -1,17 +1,23 @@
 # Enum Helper
 
+Better documentation soon ;)
+
 ```js
-const SEXO = new EnumHelper({
-  Masculino: {
+const Enum = require('vanilla-enum')
+
+const GENDER = new Enum({
+  Male: {
     value: 1,
-    description: "Masculino"
+    description: "Male"
   },
-  Feminino: {
+  Female: {
     value: 2,
-    description: "Feminino"
+    description: "Female"
   }
 })
 
-console.log(SEXO.Masculino) // 1
-console.log(SEXO.getDescription(2)) // Feminino
+console.log(SEXO.Male)                // 1
+console.log(SEXO.getDescription(2))   // Female
+console.log(SEXO.Male.toString())     // Male
+console.log(SEXO.Female.is('Female')) // true
 ```
