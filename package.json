@@ -15,8 +15,8 @@
     "type": "git",
     "url": "git+https://github.com/pedrohenriquepires/vanilla-enum.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["enum", "vanillajs", "javascript"],
+  "author": "Pedro Henrique Pires",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/pedrohenriquepires/vanilla-enum/issues"
