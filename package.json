@@ -1,0 +1,30 @@
+{
+  "name": "vanilla-enum",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/vanilla-enum.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "babel lib --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrohenriquepires/vanilla-enum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrohenriquepires/vanilla-enum/issues"
+  },
+  "homepage": "https://github.com/pedrohenriquepires/vanilla-enum#readme",
+  "devDependencies": {
+    "babel-preset-minify": "^0.5.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "jest": "^24.1.0"
+  }
+}
