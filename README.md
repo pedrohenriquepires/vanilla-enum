@@ -1,4 +1,4 @@
-# Enum Helper
+# Vanilla Enum
 
 Better documentation soon ;)
 
