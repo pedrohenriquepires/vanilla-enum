@@ -31,9 +31,9 @@ GENDER.Female.is('Female') // true
 
 #### Options
 
-| name       | type    | required | default | description |
-| ---------- | ------- | -------- | ------- | ----------- |
-| ignoreCase | boolean | no | false | Ignore case when using the `is` function |
+| name       | type    | default | description |
+| ---------- | ------- | ------- | ----------- |
+| ignoreCase | boolean | false | Ignore case when using the `is` function |
 
 # Custom properties
 
