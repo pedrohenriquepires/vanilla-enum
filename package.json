@@ -27,10 +27,9 @@
     "prepublish": "npm test && npm run build"
   },
   "devDependencies": {
-    "babel-preset-minify": "^0.5.0",
-    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
     "babel-jest": "^24.3.1",
+    "babel-preset-minify": "^0.5.0",
     "jest": "^24.1.0"
   }
 }
