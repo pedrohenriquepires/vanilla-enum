@@ -1,6 +1,6 @@
 {
   "name": "vanilla-enum",
-  "version": "1.1.12",
+  "version": "1.1.13",
   "author": "Pedro Henrique Pires",
   "description": "A Vanilla JavaScript library to work with Enums",
   "keywords": [
