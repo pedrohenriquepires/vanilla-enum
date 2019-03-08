@@ -3,12 +3,12 @@ const Enum = require('../lib/vanilla-enum')
 const GENDER = new Enum({
   Male: {
     value: 1,
-    description: "Male 🙋‍♂️",
+    description: "Male",
     isSelected: true,
   },
   Female: {
     value: 2,
-    description: "Female 🙋‍♀️",
+    description: "Female",
   }
 })
 
@@ -22,7 +22,7 @@ describe('Enum', () => {
   })
 
   it('male gender toString must be "Male"', () => {
-    expect(GENDER.Male.toString()).toBe("Male 🙋‍♂️")
+    expect(GENDER.Male.toString()).toBe("Male")
   })
 
   it('getIsSelected from Male must be true', () => {
@@ -33,22 +33,26 @@ describe('Enum', () => {
     expect(GENDER.getIsSelected(2)).toBe(undefined)
   })
 
-  it('male gender is not equals to "MALE 🙋‍♂️"', () => {
-    expect(GENDER.Male.is("MALE 🙋‍♂️")).toBe(false)
+  it('male gender is not equals to "MALE"', () => {
+    expect(GENDER.Male.is("MALE")).toBe(false)
   })
 
-  it('male gender is equals to "MALE 🙋‍♂️" using ignoreCase option', () => {
-    expect(GENDER.Male.is("MALE 🙋‍♂️", { ignoreCase: true })).toBe(true)
+  it('male gender is equals to "Male"', () => {
+    expect(GENDER.Male.is("Male")).toBe(true)
   })
 
-  it('male gender is equals to "MALE 🙋‍♂️" when ignorCase is true', () => {
+  it('male gender is equals to "MALE" using ignoreCase option', () => {
+    expect(GENDER.Male.is("MALE", { ignoreCase: true })).toBe(true)
+  })
+
+  it('male gender is equals to "MALE" when ignorCase is true', () => {
     const GENDER = new Enum({
       Male: {
         value: 1,
-        description: "Male 🙋‍♂️"
+        description: "Male"
       }
     }, { ignoreCase: true })
 
-    expect(GENDER.Male.is("MALE 🙋‍♂️")).toBe(true)
+    expect(GENDER.Male.is("MALE")).toBe(true)
   })
 })
