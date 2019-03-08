@@ -25,16 +25,20 @@ describe('Enum', () => {
     expect(GENDER.Male.toString()).toBe("Male")
   })
 
-  it('male gender is not equals to "MALE"', () => {
-    expect(GENDER.Male.is("MALE")).toBe(false)
-  })
-
   it('getIsSelected from Male must be true', () => {
     expect(GENDER.getIsSelected(1)).toBe(true)
   })
 
   it('getIsSelected from Female must be undefined', () => {
     expect(GENDER.getIsSelected(2)).toBe(undefined)
+  })
+
+  it('male gender is not equals to "MALE"', () => {
+    expect(GENDER.Male.is("MALE")).toBe(false)
+  })
+
+  it('male gender is equals to "MALE" using ignoreCase option', () => {
+    expect(GENDER.Male.is("MALE", { ignoreCase: true })).toBe(true)
   })
 
   it('male gender is equals to "MALE" when ignorCase is true', () => {

@@ -28,12 +28,16 @@ const GENDER = new Enum({
     value: 2,
     description: "Female"
   }
+}, {
+  ignoreCase: false // default
 })
 
-GENDER.Male                // 1
-GENDER.getDescription(2)   // Female
-GENDER.Male.toString()     // Male
+GENDER.Male // 1
+GENDER.getDescription(2) // "Female"
+GENDER.Male.toString() // "Male"
 GENDER.Female.is('Female') // true
+GENDER.Female.is('FEMALE') // false
+GENDER.Female.is('FEMALE', { ignoreCase: true }) // true
 ```
 
 #### Options
@@ -61,7 +65,7 @@ const GENDER = new Enum({
   }
 })
 
-GENDER.getIsSelected(GENDER.Male)   // true
+GENDER.getIsSelected(GENDER.Male) // true
 GENDER.getIsSelected(GENDER.Female) // undefined
 ```
 
