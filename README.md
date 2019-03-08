@@ -40,7 +40,7 @@ const GENDER = new Enum({
   Male: {
     value: 1,
     description: "Male",
-    selected: true
+    isSelected: true
   },
   Female: {
     value: 2,
@@ -48,6 +48,6 @@ const GENDER = new Enum({
   }
 })
 
-console.log(GENDER.getSelected(GENDER.Male))   // true
-console.log(GENDER.getSelected(GENDER.Female)) // undefined
+console.log(GENDER.getIsSelected(GENDER.Male))   // true
+console.log(GENDER.getIsSelected(GENDER.Female)) // undefined
 ```

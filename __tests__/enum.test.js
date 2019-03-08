@@ -4,7 +4,7 @@ const GENDER = new Enum({
   Male: {
     value: 1,
     description: "Male",
-    selected: true,
+    isSelected: true,
   },
   Female: {
     value: 2,
@@ -29,12 +29,12 @@ describe('Enum', () => {
     expect(GENDER.Male.is("MALE")).toBe(false)
   })
 
-  it('getSelected from Male must be true', () => {
-    expect(GENDER.getSelected(1)).toBe(true)
+  it('getIsSelected from Male must be true', () => {
+    expect(GENDER.getIsSelected(1)).toBe(true)
   })
 
-  it('getSelected from Female must be undefined', () => {
-    expect(GENDER.getSelected(2)).toBe(undefined)
+  it('getIsSelected from Female must be undefined', () => {
+    expect(GENDER.getIsSelected(2)).toBe(undefined)
   })
 
   it('male gender is equals to "MALE" when ignorCase is true', () => {
