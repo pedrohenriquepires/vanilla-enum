@@ -18,10 +18,10 @@ const GENDER = new Enum({
   }
 })
 
-console.log(GENDER.Male)                // 1
-console.log(GENDER.getDescription(2))   // Female
-console.log(GENDER.Male.toString())     // Male
-console.log(GENDER.Female.is('Female')) // true
+GENDER.Male                // 1
+GENDER.getDescription(2)   // Female
+GENDER.Male.toString()     // Male
+GENDER.Female.is('Female') // true
 ```
 
 #### Options
@@ -49,8 +49,8 @@ const GENDER = new Enum({
   }
 })
 
-console.log(GENDER.getIsSelected(GENDER.Male))   // true
-console.log(GENDER.getIsSelected(GENDER.Female)) // undefined
+GENDER.getIsSelected(GENDER.Male)   // true
+GENDER.getIsSelected(GENDER.Female) // undefined
 ```
 
 ## License
