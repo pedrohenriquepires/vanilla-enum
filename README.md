@@ -3,7 +3,7 @@
 Better documentation soon ;)
 
 # Basic usage
-`Enum(Object [,options])`
+`Enum(object[, options])`
 ```js
 import Enum from 'vanilla-enum'
 
