@@ -3,7 +3,11 @@
   "version": "1.1.8",
   "author": "Pedro Henrique Pires",
   "description": "A Vanilla JavaScript library to work with Enums",
-  "keywords": ["enum", "vanillajs", "javascript"],
+  "keywords": [
+    "enum",
+    "vanillajs",
+    "javascript"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/pedrohenriquepires/vanilla-enum#readme",
   "repository": {
@@ -13,18 +17,15 @@
   "bugs": {
     "url": "https://github.com/pedrohenriquepires/vanilla-enum/issues"
   },
-
   "main": "./lib/vanilla-enum.js",
   "directories": {
     "lib": "lib"
   },
-
   "scripts": {
     "test": "jest",
     "build": "babel lib --out-dir dist",
     "prepublish": "npm test && npm run build"
   },
-
   "devDependencies": {
     "babel-preset-minify": "^0.5.0",
     "babel": "^6.23.0",
