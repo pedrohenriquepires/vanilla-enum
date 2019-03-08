@@ -3,6 +3,7 @@
   <img src="https://img.shields.io/npm/dt/vanilla-enum.svg">
   <img src="https://img.shields.io/npm/l/vanilla-enum.svg">
   <img src="https://img.shields.io/bundlephobia/min/vanilla-enum.svg">
+  <img src="https://img.shields.io/travis/pedrohenriquepires/vanilla-enum.svg">
 </p>
 
 # Basic usage
