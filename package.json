@@ -1,13 +1,10 @@
 {
   "name": "vanilla-enum",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "author": "Pedro Henrique Pires",
   "description": "A Vanilla JavaScript library to work with Enums",
   "keywords": ["enum", "vanillajs", "javascript"],
-  "licenses": [{
-    "type": "MIT",
-    "url": "https://www.opensource.org/licenses/mit-license.php"
-  }],
+  "license": "MIT",
   "homepage": "https://github.com/pedrohenriquepires/vanilla-enum#readme",
   "repository": {
     "type": "git",

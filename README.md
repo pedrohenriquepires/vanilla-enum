@@ -51,3 +51,6 @@ const GENDER = new Enum({
 console.log(GENDER.getIsSelected(GENDER.Male))   // true
 console.log(GENDER.getIsSelected(GENDER.Female)) // undefined
 ```
+
+## License
+Vanilla Enum uses the [MIT](https://opensource.org/licenses/MIT) license.
