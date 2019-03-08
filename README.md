@@ -7,6 +7,13 @@
   <img src="https://img.shields.io/npm/v/vanilla-enum.svg">
 </p>
 
+# Instalation
+```bash
+npm install vanilla-enum
+# or with yarn
+yarn add vanilla-enum
+```
+
 # Basic usage
 `Enum(object[, options])`
 ```js
