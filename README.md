@@ -1,4 +1,5 @@
 # Vanilla Enum
+![logo](docs/logo.png)
 
 Better documentation soon ;)
 
