@@ -3,11 +3,12 @@ const Enum = require('../lib/vanilla-enum')
 const GENDER = new Enum({
   Male: {
     value: 1,
-    description: "Male"
+    description: "Male",
+    selected: true,
   },
   Female: {
     value: 2,
-    description: "Female"
+    description: "Female",
   }
 })
 
@@ -26,6 +27,14 @@ describe('Enum', () => {
 
   it('male gender is not equals to "MALE"', () => {
     expect(GENDER.Male.is("MALE")).toBe(false)
+  })
+
+  it('getSelected from Male must be true', () => {
+    expect(GENDER.getSelected(1)).toBe(true)
+  })
+
+  it('getSelected from Female must be undefined', () => {
+    expect(GENDER.getSelected(2)).toBe(undefined)
   })
 
   it('male gender is equals to "MALE" when ignorCase is true', () => {
