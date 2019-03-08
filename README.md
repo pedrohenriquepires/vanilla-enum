@@ -22,22 +22,22 @@ import Enum from 'vanilla-enum'
 const GENDER = new Enum({
   Male: {
     value: 1,
-    description: "Male"
+    description: "Male 🙋‍♂️"
   },
   Female: {
     value: 2,
-    description: "Female"
+    description: "Female 🙋‍♀️"
   }
 }, {
   ignoreCase: false // default
 })
 
 GENDER.Male // 1
-GENDER.getDescription(2) // "Female"
-GENDER.Male.toString() // "Male"
-GENDER.Female.is('Female') // true
-GENDER.Female.is('FEMALE') // false
-GENDER.Female.is('FEMALE', { ignoreCase: true }) // true
+GENDER.getDescription(2) // "Female 🙋‍♀️"
+GENDER.Male.toString() // "Male 🙋‍♂️"
+GENDER.Female.is('Female 🙋‍♀️') // true
+GENDER.Female.is('FEMALE 🙋‍♀️') // false
+GENDER.Female.is('FEMALE 🙋‍♀️', { ignoreCase: true }) // true
 ```
 
 #### Options
@@ -56,12 +56,12 @@ import Enum from 'vanilla-enum'
 const GENDER = new Enum({
   Male: {
     value: 1,
-    description: "Male",
+    description: "🙋‍♂️",
     isSelected: true
   },
   Female: {
     value: 2,
-    description: "Female"
+    description: "🙋‍♀️"
   }
 })
 
