@@ -9,7 +9,7 @@
 
 # Instalation
 ```bash
-npm install vanilla-enum
+npm install --save vanilla-enum
 # or with yarn
 yarn add vanilla-enum
 ```
