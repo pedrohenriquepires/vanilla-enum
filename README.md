@@ -71,3 +71,4 @@ GENDER.getIsSelected(GENDER.Female) // undefined
 
 ## License
 Vanilla Enum uses the [MIT](https://opensource.org/licenses/MIT) license.
+
