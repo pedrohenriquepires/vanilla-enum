@@ -7,6 +7,8 @@
   <img src="https://img.shields.io/npm/v/vanilla-enum.svg">
 </p>
 
+# ⚠️ Deprecated
+
 # Instalation
 ```bash
 npm install --save vanilla-enum
